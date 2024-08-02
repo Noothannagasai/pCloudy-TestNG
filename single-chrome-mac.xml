@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue"
+	name="Test Suite" parallel="false">
+	<test name="Chrome-MAC">
+		<parameter name="os" value="Mac" />
+		<parameter name="osVersion" value="Ventura" />
+		<parameter name="browserName" value="chrome" />
+		<parameter name="browserVersions" value="120" />
+		<classes>
+			<class name="com.pCloudy.testNg.singleRunner" />
+		</classes>
+	</test>
+
+	
+</suite> <!-- Suite -->

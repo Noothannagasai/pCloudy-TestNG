@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue"
+	name="Test Suite" parallel="false">
+	<test name="MsEdge-Windows">
+		<parameter name="os" value="Windows" />
+		<parameter name="osVersion" value="11" />
+		<parameter name="browserName" value="edge" />
+		<parameter name="browserVersions" value="118" />
+		<classes>
+			<class name="com.pCloudy.testNg.singleRunner" />
+		</classes>
+	</test>
+	
+</suite> <!-- Suite -->

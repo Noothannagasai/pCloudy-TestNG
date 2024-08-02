@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue"
+	name="pCloudy Multiple Browser Suite" parallel="false">
+	<test name="firefox-mac">
+	<parameter name="os" value="Mac" />
+	<parameter name="osVersion" value="Ventura" />
+	<parameter name="browserName" value="firefox" />
+	<parameter name="browserVersions" value="113" />
+		<classes>
+			<class name="com.pCloudy.testNg.multiplebrowsersWithTestNg" />
+		</classes>
+	</test>
+
+<!--	<test name="MsEdge-Windows">-->
+<!--		<parameter name="os" value="Windows" />-->
+<!--		<parameter name="osVersion" value="11" />-->
+<!--		<parameter name="browserName" value="edge" />-->
+<!--		<parameter name="browserVersions" value="118" />-->
+<!--		<classes>-->
+<!--			<class name="com.pCloudy.testNg.multiplebrowsersWithTestNg" />-->
+<!--		</classes>-->
+<!--	</test>-->
+
+<!--	<test name="Chrome-MAC">-->
+<!--		<parameter name="os" value="Mac" />-->
+<!--		<parameter name="osVersion" value="Ventura" />-->
+<!--		<parameter name="browserName" value="chrome" />-->
+<!--		<parameter name="browserVersions" value="120" />-->
+<!--		<classes>-->
+<!--			<class name="com.pCloudy.testNg.multiplebrowsersWithTestNg" />-->
+<!--		</classes>-->
+<!--	</test>-->
+
+<!--	<test name="Safari-MAC">-->
+<!--		<parameter name="os" value="Mac" />-->
+<!--		<parameter name="osVersion" value="Monterey" />-->
+<!--		<parameter name="browserName" value="safari" />-->
+<!--		<parameter name="browserVersions" value="15" />-->
+<!--		<classes>-->
+<!--			<class name="com.pCloudy.testNg.multiplebrowsersWithTestNg" />-->
+<!--		</classes>-->
+<!--	</test>-->
+	
+</suite> <!-- Suite -->
